@@ -6,9 +6,9 @@ const SERVICIOS = [
     titulo: 'Cambio de pantallas',
     desc: 'Módulos originales y compatibles para todas las marcas',
     detalle: [
-      { cal: 'Original (OEM)', desc: 'Idéntica a la de fábrica. Colores reales, táctil perfecto y garantía extendida.' },
-      { cal: 'Hard OLED', desc: 'Para iPhones. Pantalla rígida con excelente color, intermedia entre original y económica.' },
-      { cal: 'Compatible', desc: 'Repuesto de terceros con buena calidad. Ideal para quienes buscan precio accesible.' },
+      { cal: 'Black "Original"', desc: 'Idéntica a la de fábrica. Colores reales, táctil perfecto y garantía extendida.' },
+      { cal: 'Gold (oled)', desc: 'Para iPhones. Pantalla rígida con excelente color, intermedia entre original y económica.' },
+      { cal: 'Silver (incell)', desc: 'Repuesto de terceros con buena calidad. Ideal para quienes buscan precio accesible.' },
     ],
   },
   {
@@ -16,14 +16,14 @@ const SERVICIOS = [
     titulo: 'Cambio de batería',
     desc: 'Batería nueva con garantía incluida',
     detalle: [
-      { cal: 'Alta capacidad', desc: 'Igual o superior a la original, mayor duración por carga.' },
-      { cal: 'Compatible', desc: 'Batería genérica funcional a precio accesible.' },
+      { cal: 'Iphone', desc: 'Excelente calidad de batería para iPhones. programadas al 100% sin mensajes de piezas desconocidas.' },
+      { cal: 'Android', desc: 'Batería de alta calidad para dispositivos Android. ' },
     ],
   },
   {
     icon: '🔌',
     titulo: 'Pines de carga',
-    desc: 'Conectores USB-C, Lightning y Micro USB',
+    desc: 'Placas de carga - USB-C, Lightning y Micro USB',
     detalle: [
       { cal: 'USB-C', desc: 'Android modernos e iPhone 15 en adelante.' },
       { cal: 'Lightning', desc: 'iPhone 14 y anteriores.' },
@@ -33,7 +33,7 @@ const SERVICIOS = [
   {
     icon: '💧',
     titulo: 'Equipos mojados',
-    desc: 'Diagnóstico y recuperación por daño de agua',
+    desc: 'Diagnóstico y recuperación por daño de agua (sin garantía)',
     detalle: [
       { cal: 'Diagnóstico sin cargo', desc: 'Evaluamos el nivel de daño antes de presupuestar.' },
       { cal: 'Limpieza ultrasónica', desc: 'Proceso profesional para eliminar corrosión en placa.' },
@@ -56,6 +56,7 @@ const SERVICIOS = [
     detalle: [
       { cal: 'Vidrios templados', desc: 'Protección de pantalla con colocación incluida.' },
       { cal: 'Fundas', desc: 'Variedad de modelos y colores para tu modelo.' },
+      { cal: 'Cargadores y cables', desc: 'Accesorios de carga de alta calidad para todos los dispositivos.' },
       { cal: 'Accesorios varios', desc: 'Cables, cargadores, auriculares y más.' },
     ],
   },
@@ -148,10 +149,10 @@ export default function PublicPage({ onLoginClick }) {
           {[
             { src: '/foto1.jpg', alt: 'Reparación bajo microscopio' },
             { src: '/foto2.jpg', alt: 'Desmontaje y cambio de cámara' },
-            { src: '/foto3.jpg', alt: 'Interior — cambio de tapa trasera' },
-            { src: '/foto4.jpg', alt: 'Tapa trasera — antes' },
-            { src: '/foto5.jpg', alt: 'Tapa trasera — después' },
-            { src: '/foto6.jpg', alt: 'Equipo listo para entrega' },
+            { src: '/foto3.jpg', alt: 'Cambio de tapa trasera' },
+            { src: '/foto4.jpg', alt: 'Cambio lente de cámara' },
+            { src: '/foto5.jpg', alt: 'Módulo nuevo iPhone 17 Pro' },
+            { src: '/foto6.jpg', alt: 'Resultado final, tapa trasera' },
           ].map((foto, i) => (
             <div key={i} className="gallery-item">
               <img src={foto.src} alt={foto.alt} loading="lazy" />
