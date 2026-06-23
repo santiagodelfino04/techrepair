@@ -17,7 +17,7 @@ export default function PublicPage({ onLoginClick }) {
             width: 36, height: 36, borderRadius: 10,
             background: 'linear-gradient(135deg,#c44dff,#4A90E2)',
             display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18
-          }}>🔧</div>
+          }}><img src="/logo.png" alt="Tech Repair" style={{ width: 40, height: 40, objectFit: 'contain' }} /></div>
           <span style={{ color: '#fff', fontWeight: 900, fontSize: 18 }}>
             Tech <span className="grad-text">Repair</span>
           </span>
@@ -31,8 +31,7 @@ export default function PublicPage({ onLoginClick }) {
 
       {/* Hero */}
       <div className="hero">
-        <div className="hero-icon">🔧</div>
-
+        <img src="/logo.png" alt="Tech Repair" style={{ width: 100, height: 100, objectFit: 'contain', marginBottom: 24 }} />
         <div style={{
           display: 'inline-flex', alignItems: 'center', gap: 6,
           padding: '5px 14px', borderRadius: 50,
