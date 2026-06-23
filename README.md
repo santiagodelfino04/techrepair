@@ -65,7 +65,8 @@ Stack: React + Vite · Supabase (base de datos) · Cloudflare Pages (hosting)
 
 ```bash
 npm install
-cp .env.example .env.local
+cp .env.example .env.local      # Mac/Linux
+copy .env.example .env.local    # Windows
 # Completá .env.local con tus claves de Supabase
 npm run dev
 ```
