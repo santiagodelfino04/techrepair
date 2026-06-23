@@ -146,12 +146,12 @@ export default function PublicPage({ onLoginClick }) {
         </p>
         <div className="gallery-grid">
           {[
-            { src: '/galeria/foto1.jpg.JPEG', alt: 'Reparación bajo microscopio' },
-            { src: '/galeria/foto2.jpg.JPEG', alt: 'Desmontaje y cambio de cámara' },
-            { src: '/galeria/foto3.jpg.JPEG', alt: 'Interior — cambio de tapa trasera' },
-            { src: '/galeria/foto4.jpg.JPEG', alt: 'Tapa trasera — antes' },
-            { src: '/galeria/foto5.jpg.JPEG', alt: 'Tapa trasera — después' },
-            { src: '/galeria/foto6.jpg.JPEG', alt: 'Equipo listo para entrega' },
+            { src: '/foto1.jpg', alt: 'Reparación bajo microscopio' },
+            { src: '/foto2.jpg', alt: 'Desmontaje y cambio de cámara' },
+            { src: '/foto3.jpg', alt: 'Interior — cambio de tapa trasera' },
+            { src: '/foto4.jpg', alt: 'Tapa trasera — antes' },
+            { src: '/foto5.jpg', alt: 'Tapa trasera — después' },
+            { src: '/foto6.jpg', alt: 'Equipo listo para entrega' },
           ].map((foto, i) => (
             <div key={i} className="gallery-item">
               <img src={foto.src} alt={foto.alt} loading="lazy" />
