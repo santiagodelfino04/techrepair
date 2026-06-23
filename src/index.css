@@ -240,6 +240,15 @@ tbody tr:hover td { background: #faf7ff; }
   background: rgba(255,255,255,.06); transition: all .2s;
 }
 .contact-pill:hover { border-color: #c44dff; background: rgba(196,77,255,.15); }
+.wpp-fab {
+  position: fixed; bottom: 24px; right: 24px; z-index: 999;
+  width: 58px; height: 58px; border-radius: 50%;
+  background: #25d366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,.45);
+  transition: transform .2s, box-shadow .2s;
+}
+.wpp-fab:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,.6); }
 .contact-pill-ig { border-color: rgba(225,48,108,.4); }
 .contact-pill-ig:hover { border-color: #e1306c; background: rgba(225,48,108,.15); }
 
